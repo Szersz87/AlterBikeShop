@@ -220,12 +220,58 @@ header .fa-chevron-down {
   z-index: -5;
 }
 .servis .accordion-button {
+  letter-spacing: 5px;
+  color: aqua;
   text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
 }
 .servis .accordion-item {
   margin: 20px 10px;
   padding: 30px;
   text-align: left;
+  color: aqua;
+  background-color: rgba(0, 0, 0, 0);
+}
+.servis .accordion-button:hover {
+  transform: scale(1.09);
+}
+
+.contact {
+  position: relative;
+  background-image: url(../img/sopotS.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  z-index: 0;
+}
+.contact h2 {
+  color: #ddd;
+  font-weight: bold;
+}
+.contact .underline {
+  color: #ddd;
+  font-weight: bold;
+}
+.contact .contact-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -5;
+}
+.contact .contact-us {
+  color: aqua;
+  display: flex;
+  align-items: center;
+}
+.contact .contact-us .contact-item {
+  margin: 30px 0;
+}
+.contact .contact-us .contact-item h3 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 @media (min-width: 768px) {
@@ -253,5 +299,14 @@ header .fa-chevron-down {
   }
   .servis {
     background-image: url(../img/serwisL.jpg);
+  }
+  .contact {
+    background-image: url(../img/sopotL.jpg);
+  }
+  .contact .contact-us h3 {
+    font-size: 26px;
+  }
+  .contact .contact-us p {
+    font-size: 19px;
   }
 }/*# sourceMappingURL=style.css.map */
